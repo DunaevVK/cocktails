@@ -5,14 +5,13 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/coctails2",
+  base: "/cocktails",
   plugins: [
     vue(),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-      images: path.resolve(__dirname, 'src/assets/img/'),
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
 })
