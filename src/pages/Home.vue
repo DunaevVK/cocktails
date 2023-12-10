@@ -22,7 +22,7 @@ function removeIngredient(){
 </script>
 
 <template>
-    <AppLayout imgUrl="/bg-1.jpg" :back-func="removeIngredient" :is-back-button-visible="!!ingredient">
+    <AppLayout imgUrl="bg-1.jpg" :back-func="removeIngredient" :is-back-button-visible="!!ingredient">
         <div class="wrapper">
             <div v-if="!ingredient || !cocktails" class="info">
                 <div class="title">Choose your drink</div>
